@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".All_Downloads">
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="@drawable/pbg">-->
+
+       <!--<RelativeLayout-->
+           <!--android:layout_width="match_parent"-->
+           <!--android:layout_height="match_parent"> <TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="All Downloads"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:textColor="#1d1d1d"-->
+            <!--android:textSize="25dp"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/delete"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/delete"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:visibility="invisible"/>-->
+       <!--</RelativeLayout>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="All Downloads"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:textColor="#1d1d1d"-->
+            <!--android:textSize="25dp"/>-->
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/delete"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/androidList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Downloads"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <!--<LinearLayout-->
+        <!--android:gravity="center"-->
+        <!--android:background="@drawable/pbg"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:id="@+id/baar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="65dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button8"-->
+            <!--android:background="@drawable/button7"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+            <!--android:layout_marginLeft="4dp"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:id="@+id/button7"-->
+            <!--android:background="@drawable/button4"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:id="@+id/button9"-->
+            <!--android:background="@drawable/button5"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:id="@+id/button10"-->
+            <!--android:background="@drawable/button8"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+
+            <!--/>-->
+        <!--<Button-->
+            <!--android:layout_marginLeft="6dp"-->
+            <!--android:id="@+id/button11"-->
+            <!--android:background="@drawable/button9"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>
