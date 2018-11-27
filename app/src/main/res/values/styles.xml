@@ -19,7 +19,7 @@
         <item name="colorControlNormal">#faf8f9</item>
     </style>
     <style name="MyEditTextStyle2" parent="Widget.AppCompat.EditText">
-        <item name="colorControlActivated">#dc8f41</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
     </style>
 
 </resources>

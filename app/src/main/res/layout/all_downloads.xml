@@ -3,46 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context=".All_Downloads">
-    <!--<android.support.v7.widget.Toolbar-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:id="@+id/toolbar"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:background="@drawable/pbg">-->
 
-       <!--<RelativeLayout-->
-           <!--android:layout_width="match_parent"-->
-           <!--android:layout_height="match_parent"> <TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="All Downloads"-->
-            <!--android:paddingTop="10dp"-->
-            <!--android:textColor="#1d1d1d"-->
-            <!--android:textSize="25dp"/>-->
-        <!--<Button-->
-            <!--android:id="@+id/delete"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_marginRight="10dp"-->
-            <!--android:background="@drawable/delete"-->
-            <!--android:layout_width="25dp"-->
-            <!--android:layout_height="40dp"-->
-            <!--android:layout_alignParentRight="true"-->
-            <!--android:visibility="invisible"/>-->
-       <!--</RelativeLayout>-->
-    <!--</android.support.v7.widget.Toolbar>-->
-
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/toolbar"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary">
 
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="All Downloads"-->
-            <!--android:paddingTop="10dp"-->
-            <!--android:textColor="#1d1d1d"-->
-            <!--android:textSize="25dp"/>-->
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
 
+           <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="All Downloads"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
         <Button
             android:id="@+id/delete"
             android:layout_marginTop="10dp"
@@ -52,15 +32,39 @@
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
             android:visibility="invisible"/>
+       </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
 
-    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="All Downloads"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:paddingTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="#1d1d1d"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="25dp"/>&ndash;&gt;-->
+
+        <!--<Button-->
+            <!--android:id="@+id/delete"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/delete"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:visibility="invisible"/>-->
+
+    <!--</RelativeLayout>-->
 
     <ListView
-        android:layout_below="@id/toolbar"
+        android:layout_below="@id/Banner_header"
         android:id="@+id/androidList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        android:layout_above="@+id/Banner_footer"/>
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
@@ -120,5 +124,43 @@
             <!--android:layout_height="65dp"-->
             <!--/>-->
     <!--</LinearLayout>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/Banner_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_home_footer">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Banner_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_home_footer">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
 
 </RelativeLayout>

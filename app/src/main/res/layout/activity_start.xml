@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/start_activity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -37,15 +37,13 @@
                 android:onClick="onClick_button"
                 android:padding="3dp"
                 android:src="@drawable/ic_action_refresh"
-                android:scaleType="fitXY"/>
-
-
+                android:scaleType="fitXY"
+                android:background="@drawable/button_round"/>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
                 android:layout_marginBottom="10dp"
                 android:background="@color/white"
                 android:descendantFocusability="beforeDescendants"
@@ -53,34 +51,32 @@
 
 
 
-
-
                 <EditText
                     android:id="@+id/editText_url"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="30dp"
                     android:background="@null"
                     android:ellipsize="end"
                     android:imeOptions="actionGo"
-                    android:inputType="textWebEmailAddress"
                     android:linksClickable="true"
                     android:maxLines="1"
                     android:padding="3dp"
                     android:scrollHorizontally="true"
-                    android:textColorLink="@color/black"
+                    android:textColor="@color/black"
                     android:theme="@style/MyEditTextStyle2"
-                    android:windowSoftInputMode="stateHidden"  />
+                    android:windowSoftInputMode="stateHidden"
+                    android:editable="false"
+                    android:singleLine="true"/>
 
 
-                <ImageView
-                    android:id="@+id/clearable_button_clear"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="5dip"
-                    android:background="@drawable/ic_action_clear"
-                    android:onClick="onClick_button" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/clearable_button_clear"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginRight="5dip"-->
+                    <!--android:background="@drawable/ic_action_clear"-->
+                    <!--android:onClick="onClick_button" />-->
             </RelativeLayout>
 
         </android.support.v7.widget.Toolbar>

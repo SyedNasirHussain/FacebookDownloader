@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto">-->
+    <!--&lt;!&ndash;<item&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/action_info"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:icon="@drawable/sticker_3rdparty_info"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:title="@string/more_info_button"&ndash;&gt;-->
+        <!--&lt;!&ndash;app:showAsAction="collapseActionView" />&ndash;&gt;-->
+    <!--<item-->
+        <!--android:id="@+id/action_share"-->
+        <!--android:icon="@drawable/ic_action_share"-->
+        <!--android:title="@string/button_menu_share"-->
+        <!--app:showAsAction="withText|collapseActionView" />-->
+    <!--<item-->
+        <!--android:id="@+id/action_more"-->
+        <!--android:icon="@drawable/ic_action_more"-->
+        <!--android:title="@string/button_menu_more"-->
+        <!--app:showAsAction="collapseActionView"  />-->
+<!--</menu>-->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StartActivity">
+
+
+    <item
+        android:id="@+id/action_notification1"
+        android:icon="@drawable/ic_icon_menu"
+        android:title="action_notification"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_allDownload"
+                android:title="@string/all_downloads"/>
+
+            <item
+                android:id="@+id/action_downloading"
+                android:title="@string/downloading"/>
+
+
+        </menu>
+    </item>
+
+
+</menu>

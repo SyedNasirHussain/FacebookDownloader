@@ -4,28 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity1">
-    <!--<android.support.v7.widget.Toolbar-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:id="@+id/toolbar_menu"-->
-        <!--android:layout_height="60dp"-->
-        <!--android:background="@drawable/pbg">-->
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="Downloading..."-->
-            <!--android:paddingTop="10dp"-->
-            <!--android:textColor="#1d1d1d"-->
-            <!--android:textSize="25dp"/>-->
-    <!--</android.support.v7.widget.Toolbar>-->
+    tools:context=".DownloadVideoActivity">
+
     <ListView
-        android:id="@+id/androidList"
+        android:id="@+id/act_down_vid_androidList"
         android:layout_below="@id/toolbar"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonAdd"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/Banner_footer"/>
+        android:text="Button"
+        android:layout_above="@+id/act_down_vid_Banner_footer"
+        android:onClick="onClickAddButton"/>
+
     <TextView
-        android:id="@+id/text"
+        android:id="@+id/act_down_vid_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/no_downloads"
@@ -34,14 +31,14 @@
         android:visibility="gone"/>
 
     <LinearLayout
-        android:id="@+id/Banner_footer"
+        android:id="@+id/act_down_vid_Banner_footer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true">
 
         <com.google.android.gms.ads.AdView
-            android:id="@+id/adView"
+            android:id="@+id/act_down_vid_adView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"

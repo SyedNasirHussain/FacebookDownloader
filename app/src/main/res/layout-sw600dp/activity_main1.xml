@@ -6,7 +6,7 @@
     tools:context=".MainActivity1">
     <!--<android.support.v7.widget.Toolbar-->
         <!--android:layout_width="match_parent"-->
-        <!--android:id="@+id/toolbar"-->
+        <!--android:id="@+id/toolbar_menu"-->
         <!--android:layout_height="60dp"-->
         <!--android:background="@drawable/pbg">-->
         <!--<TextView-->

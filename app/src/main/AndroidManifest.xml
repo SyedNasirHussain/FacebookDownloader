@@ -10,27 +10,27 @@
 
     <application
         android:allowBackup="true"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:ignore="GoogleAppIndexingWarning"
-        android:fullBackupContent="true">
-
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".StartActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
         </activity>
-
         <activity android:name=".Dialog" />
         <activity android:name=".StreamVideo" />
         <activity android:name=".All_Downloads" />
         <activity android:name=".Download_previewpix" />
         <activity android:name=".MainActivity1" />
         <activity android:name=".Download" />
-
         <activity android:name=".StartActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -38,7 +38,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SearchableActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
 
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".DownloadVideoActivity"/>
     </application>
 
 </manifest>
